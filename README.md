@@ -1,0 +1,2 @@
+# Advent of Code 2021
+This repository contains the solutions to Advent of Code 2021 by Simon Karman. Advent of Code is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like.
