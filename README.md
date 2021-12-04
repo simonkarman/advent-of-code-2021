@@ -34,15 +34,15 @@ All days are unit tested. You can run smaller s of the tests.
 npm test
 
 # run all tests of single day
-npm run test -- -t "Day03"
+npm run dev-test -- -t "Day01"
 
 # run the tests for solution A of single day
-npm run test -- -t "Day03 A"
+npm run dev-test -- -t "Day04 A"
 
 # run the example test for solution A of single day
-npm run test -- -t "Day03 A example"
+npm run dev-test -- -t "Day03 A example"
 
 # It even supports regex
 # run the answer test for solution B of all days
-npm run test -- -t "Day\d{2} B answer"
+npm run dev-test -- -t "Day\d{2} B answer"
 ```

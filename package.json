@@ -13,7 +13,8 @@
   },
   "homepage": "https://github.com/simonkarman/advent-of-code-2021#readme",
   "scripts": {
-    "test": "jest --coverage --silent --verbose",
+    "dev-test": "jest --verbose=false",
+    "test": "jest --silent --verbose",
     "lint": "eslint . --ext .ts",
     "lint:fix": "npm run lint --fix",
     "precommit": "npm run lint && npm test"
