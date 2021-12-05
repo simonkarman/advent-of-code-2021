@@ -4,9 +4,10 @@ import { Day01 } from '../src/day01';
 import { Day02 } from '../src/day02';
 import { Day03 } from '../src/day03';
 import { Day04 } from '../src/day04';
+import { Day05 } from '../src/day05';
 
 const days: Day<unknown, unknown>[] = [
-  new Day01(), new Day02(), new Day03(), new Day04(),
+  new Day01(), new Day02(), new Day03(), new Day04(), new Day05(),
 ];
 
 days.map(day => {
