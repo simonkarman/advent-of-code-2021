@@ -24,6 +24,8 @@ The solutions for each day can be found in the `src/` directory. The solutions o
 
 Each day exports a class that is of type `Day<Input, Result>` where `Input` is the type of the input after transformation and `Result` is the type of the expected answer.
 
+> Note: To easily add a new day you can run `npm run init-day --number=06`. This will create the required src and input files for you.
+
 ## Input
 The `input/` directory contains two input files for each day. One for the example input (`day01example.txt`) and one for the answer input (`day01.txt`).
 
