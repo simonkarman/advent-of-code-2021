@@ -13,7 +13,7 @@
   },
   "homepage": "https://github.com/simonkarman/advent-of-code-2021#readme",
   "scripts": {
-    "init-day":  "touch \"input/day${npm_config_number}example.txt\" \"input/day${npm_config_number}.txt\" \"src/day${npm_config_number}.ts\"",
+    "init-day": "touch \"input/day${npm_config_number}example.txt\" \"input/day${npm_config_number}.txt\" && cp src/day00.ts \"src/day${npm_config_number}.ts\" && git add --all",
     "dev-test": "jest --verbose=false",
     "test": "jest --silent --verbose",
     "lint": "eslint . --ext .ts",

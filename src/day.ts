@@ -1,8 +1,11 @@
+export type Skip = '--skip--';
+export const Skip: Skip = '--skip--';
+
 interface Answers<Result> {
-  exampleA: Result;
-  a: Result;
-  exampleB: Result
-  b: Result;
+  exampleA: Result | Skip;
+  a: Result | Skip;
+  exampleB: Result | Skip
+  b: Result | Skip;
 }
 
 export interface Day<Input, Result> {

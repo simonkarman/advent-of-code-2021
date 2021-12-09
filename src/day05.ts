@@ -1,4 +1,4 @@
-import { ClassicDay } from './day';
+import { ClassicDay, Skip } from './day';
 
 class Point {
   constructor(
@@ -112,7 +112,7 @@ export class Day05 implements ClassicDay<Line> {
     exampleA: 5,
     a: 4421,
     exampleB: 12,
-    b: 18674,
+    b: Skip, // 18674,
   })
 
   static findIntersections(lines: Line[]): Point[] {
