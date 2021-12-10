@@ -18,6 +18,8 @@ const days: Day<unknown, unknown>[] = [
   new Day10(),
 ];
 
+const runner = (shouldSkip: boolean) => shouldSkip ? test.skip : test;
+
 days.map(day => {
   const loadInputFrom = (fileName: string): unknown => {
     return day.transformInput(fs.readFileSync(`./input/${fileName.toLowerCase()}`).toString().split('\n'));
@@ -28,30 +30,18 @@ days.map(day => {
 
   describe(day.constructor.name, () => {
     describe('A', () => {
-      it('example', () => {
-        if (answers.exampleA === Skip) {
-          return;
-        }
+      runner(answers.exampleA === Skip)('example', () => {
         expect(day.solutionA(loadExampleInput())).toBe(answers.exampleA);
       });
-      it('answer', () => {
-        if (answers.a === Skip) {
-          return;
-        }
+      runner(answers.a === Skip)('answer', () => {
         expect(day.solutionA(loadInput())).toBe(answers.a);
       });
     });
     describe('B', () => {
-      it('example', () => {
-        if (answers.exampleB === Skip) {
-          return;
-        }
+      runner(answers.exampleB === Skip)('example', () => {
         expect(day.solutionB(loadExampleInput())).toBe(answers.exampleB);
       });
-      it('answer', () => {
-        if (answers.b === Skip) {
-          return;
-        }
+      runner(answers.b === Skip)('answer', () => {
         expect(day.solutionB(loadInput())).toBe(answers.b);
       });
     });
