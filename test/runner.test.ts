@@ -11,11 +11,12 @@ import { Day07 } from '../src/day07';
 import { Day08 } from '../src/day08';
 import { Day09 } from '../src/day09';
 import { Day10 } from '../src/day10';
+import { Day11 } from '../src/day11';
 
 const days: Day<unknown, unknown>[] = [
   new Day00(), new Day01(), new Day02(), new Day03(), new Day04(),
   new Day05(), new Day06(), new Day07(), new Day08(), new Day09(),
-  new Day10(),
+  new Day10(), new Day11(),
 ];
 
 const runner = (shouldSkip: boolean) => shouldSkip ? test.skip : test;
