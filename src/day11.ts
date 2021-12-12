@@ -1,4 +1,4 @@
-import { Day, Skip } from './day';
+import { Day } from './day';
 
 interface Point { x: number, y: number }
 class Grid {
